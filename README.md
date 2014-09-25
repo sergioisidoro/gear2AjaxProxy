@@ -1,14 +1,14 @@
 On the client, use here:
 
-function fetch() {
-	try {
-		SASocket.setDataReceiveListener(onreceive);
-		// SEND AJAX RQUEST HERE !!!!
-		SASocket.sendData(CHANNELID, "THIS IS AN AJAX REQUEST IN JSON FORMAT");
-	} catch(err) {
-		console.log("exception [" + err.name + "] msg[" + err.message + "]");
+	function fetch() {
+		try {
+			SASocket.setDataReceiveListener(onreceive);
+			// SEND AJAX RQUEST HERE !!!!
+			SASocket.sendData(CHANNELID, "THIS IS AN AJAX REQUEST IN JSON FORMAT");
+		} catch(err) {
+			console.log("exception [" + err.name + "] msg[" + err.message + "]");
+		}
 	}
-}
 
 
 
