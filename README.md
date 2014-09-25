@@ -1,5 +1,5 @@
 
-On the Function onRecieve, create a HTTP request sent to the URL, get the response, and send back to device
+On the Function onRecieve, in the PoviderService, create a HTTP request sent to the URL, get the response, and send back to device
 
 
 	public void onReceive(int channelId, byte[] data) {
@@ -9,14 +9,15 @@ On the Function onRecieve, create a HTTP request sent to the URL, get the respon
 			HttpClient httpclient = new DefaultHttpClient();
 		   
 			try {
-				JSONObject jObject = new JSONObject(ajaxRequest);
-				String reqUrl = jObject.getString("url");	
-				HttpPost httppost = new HttpPost(reqUrl);
-				
-				// ADD SPECIFIC JSON TAGS HERE !!!
-				
-				//List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-		        //nameValuePairs.add(new BasicNameValuePair("id", "12345"));
+			
+			JSONObject jObject = new JSONObject(ajaxRequest);
+			String reqUrl = jObject.getString("url");	
+			HttpPost httppost = new HttpPost(reqUrl);
+			
+			// ADD SPECIFIC JSON TAGS HERE !!!
+			
+			//List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+	        	//nameValuePairs.add(new BasicNameValuePair("id", "12345"));
 		        //nameValuePairs.add(new BasicNameValuePair("stringdata", "AndDev is Cool!"));
 		        //httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
