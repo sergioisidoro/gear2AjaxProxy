@@ -1,7 +1,8 @@
 
 On the Function onRecieve, create a HTTP request sent to the URL, get the response, and send back to device
 
-public void onReceive(int channelId, byte[] data) {
+
+	public void onReceive(int channelId, byte[] data) {
 			Log.d(TAG, "onReceive");
 			String ajaxRequest = new String(data);
 			
