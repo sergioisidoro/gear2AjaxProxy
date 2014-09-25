@@ -11,6 +11,13 @@ On the client, use here:
 	}
 
 
+recieving the HTML here:
+
+	function onreceive(channelId, data) {
+		//DATA
+	}
+
+On the Proxy
 
 On the Function onRecieve, in the PoviderService, create a HTTP request sent to the URL, get the response, and send back to device
 
